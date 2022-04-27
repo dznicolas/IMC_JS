@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IMC</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<style>
+    label {
+        color: black;
+        font-size: 20px;
+    }
+
+    h2 {
+        color: black;
+    }
+    body{
+        background-color: rgb(156 163 175);
+    }
+</style>
+
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3" style="margin-top: 5%;">
+
+                <form  class="mt-5 p-4 bg-white border border-dark" style="border-radius: 10px;">
+
+                    
+                    <h2 class="mb-4" style="text-align: center;">Cálculo IMC</h2>
+                
+                    <div class="row">
+
+            <div class="mb-3 col-md-6">
+                    <label for="peso">Peso (kg):</label>
+                    <input type="number" id="peso" step="0.01" class="form-control" required>
+                </div>
+
+                <div class="mb-3 col-md-6">
+                    <label for="Altura">Altura (m):</label>
+                    <input type="number" id="altura" step="0.01" class="form-control" required>
+                </div> 
+
+                <div class="">
+                <button type="button" class="btn btn-primary" style="margin-bottom: 10px; border-color: black;" onclick="calculoIMC()">Calcular</button>    
+            </div>             
+        </div>
+        <p id="resultado" class="alert alert-primary" role="alert" style="display: none;"></p>  
+    </div>
+</body>
+<script type="text/javascript" src="calc.js"></script>
+</html>
